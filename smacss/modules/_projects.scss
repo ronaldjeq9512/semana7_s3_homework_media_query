@@ -1,0 +1,48 @@
+.Projects{
+    &-article{
+        display: flex;
+        flex-direction: row;
+        gap: $space-2;
+        flex-wrap: wrap;
+        margin-block: $space-base;
+        &-description{
+            flex: 1;
+            gap: $space-2;
+            display: flex;
+            flex-direction: column;
+            @media (max-width: 420px) {
+               min-width: $width-40;
+            }
+        }
+        &-title{
+            font-size: $font_medium;
+            color: $color-yellow;
+            font-weight: bold;
+        }
+    }
+    &-figures{
+        flex: 1;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax($width-10, 1fr));
+        gap: $space-base;
+        margin-block: $space-base;
+        position: relative;
+        &-foto{
+            max-width: $width-12;
+            box-shadow: $width-zero $width-zero $width-base $color-gray-black;
+            transition: transform 0.3s ease, z-index 0.3s ease;
+            z-index: 1;
+            &:hover {
+                transform: scale(2);
+                z-index: 10;
+                backdrop-filter: blur(100px)
+            }
+        }
+    }
+
+    @media (max-width: 1040px) {
+        &-figures {
+            gap: $space-3;
+        }
+    }
+}

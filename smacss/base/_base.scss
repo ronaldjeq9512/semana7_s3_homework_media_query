@@ -1,0 +1,21 @@
+*,*::before,*::after{
+    box-sizing: border-box;
+    margin: $space-zero;
+    padding: $space-zero;
+    color: $color-principal;
+    font-size: $font_small;
+}
+
+body {
+    background-image: linear-gradient(to left, $color-purple, $color-blue);
+    padding-inline: $space-base;
+    min-width: $width-40;
+    font-family: $principal-fonts;
+    padding-inline: $space-3;
+}
+
+@media (max-width: 420px) {
+  body {
+    width: $width-40;
+  }
+}

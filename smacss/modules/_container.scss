@@ -1,0 +1,12 @@
+.PrincipalContainer {
+    margin-block: $width-3;
+    &-title{
+        font-size: $font_large;
+    }
+}
+
+.containerInput {
+    display: flex;
+    gap: $space-base;
+    flex-wrap: wrap;
+}

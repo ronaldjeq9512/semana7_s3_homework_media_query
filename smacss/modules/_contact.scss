@@ -1,0 +1,32 @@
+.Contact{
+    margin-block: $space-base;
+    &-article{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: $space-3;
+    }
+    &-form{
+        display: flex;
+        flex-direction: column;
+        max-width: $width-60;
+        gap: $space-base;
+        &-label{
+            flex: 1;
+        }
+        &-input{
+            flex: 1;
+        }
+    }
+    &-figure{
+        &-image{
+            width: $width-20;
+            height: $height-20;
+            border: $width-base solid $color-red;
+            &:hover {
+                transform: rotate(23deg);
+            }
+        }
+    }
+}

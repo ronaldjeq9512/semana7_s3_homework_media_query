@@ -1,0 +1,20 @@
+.Navigation {
+    padding: $space-base;
+    margin-block: 20px;
+    &-list{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: $space-2;
+    }
+    &-item{
+        text-decoration: none;
+        color: $color-white;
+        font-weight: bold;
+        font-size: $font_medium;
+        &--isActive{
+            color: $color-yellow;
+        }
+    }
+}

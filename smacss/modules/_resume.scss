@@ -1,0 +1,34 @@
+@keyframes colorshadow {
+    from{box-shadow: $width-zero $width-zero $width-base $color-gray-black;}
+    to{box-shadow: $width-zero $width-zero $width-2 $color-red;}
+}
+
+.Resume{
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    gap: 30px;
+    flex-wrap: wrap;
+    &-figure{
+        &-foto{
+            width: $width-10;
+            height: $height-10;
+            border-radius: $width-base;
+            box-shadow: $width-zero $width-zero $width-base $color-gray-black;
+            &:hover{
+                animation-name: colorshadow;
+                animation-duration: 1s;
+                animation-iteration-count: infinite;
+            }
+        }
+    };
+    &-article {
+        flex: 2;
+        .PresentationText{
+            font-size: $font_large
+        }
+        .DescriptionText{
+            font-size: $font_medium
+        }
+    }
+};

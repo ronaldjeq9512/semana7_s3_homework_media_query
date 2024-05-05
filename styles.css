@@ -1,0 +1,219 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  color: #eeeeeb;
+  font-size: 14px;
+}
+
+body {
+  background-image: linear-gradient(to left, purple, blue);
+  padding-inline: 10px;
+  min-width: 400px;
+  font-family: Arial, Helvetica, sans-serif;
+  padding-inline: 30px;
+}
+
+@media (max-width: 420px) {
+  body {
+    width: 400px;
+  }
+}
+principal-layout {
+  padding: 20px;
+}
+
+contact-layout {
+  padding: 30px;
+}
+
+.Navigation {
+  padding: 10px;
+  margin-block: 20px;
+}
+.Navigation-list {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.Navigation-item {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+}
+.Navigation-item--isActive {
+  color: #dfad65;
+}
+
+.PrincipalContainer {
+  margin-block: 30px;
+}
+.PrincipalContainer-title {
+  font-size: 22px;
+}
+
+.containerInput {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.Experience-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  margin-block: 10px;
+  position: relative;
+}
+.Experience-article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+  padding-inline: 10px;
+  padding-block: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 5, 14, 0.753);
+  transition: transform 0.3s ease, z-index 0.3s ease;
+  gap: 10px;
+  z-index: 1;
+}
+.Experience-article-date {
+  font-size: 18px;
+}
+.Experience-article-job {
+  font-size: 18px;
+  margin-block: 10px;
+  color: #dfad65;
+  font-weight: bold;
+}
+.Experience-article:hover {
+  transform: scale(1.2);
+  z-index: 10;
+  -webkit-backdrop-filter: blur(100px);
+          backdrop-filter: blur(100px);
+}
+
+@keyframes colorshadow {
+  from {
+    box-shadow: 0px 0px 10px rgba(24, 24, 16, 0.753);
+  }
+  to {
+    box-shadow: 0px 0px 20px red;
+  }
+}
+.Resume {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+.Resume-figure-foto {
+  width: 100px;
+  height: 100px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(24, 24, 16, 0.753);
+}
+.Resume-figure-foto:hover {
+  animation-name: colorshadow;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+}
+.Resume-article {
+  flex: 2;
+}
+.Resume-article .PresentationText {
+  font-size: 22px;
+}
+.Resume-article .DescriptionText {
+  font-size: 18px;
+}
+
+.Projects-article {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-block: 10px;
+}
+.Projects-article-description {
+  flex: 1;
+  gap: 20px;
+  display: flex;
+  flex-direction: column;
+}
+@media (max-width: 420px) {
+  .Projects-article-description {
+    min-width: 400px;
+  }
+}
+.Projects-article-title {
+  font-size: 18px;
+  color: #dfad65;
+  font-weight: bold;
+}
+.Projects-figures {
+  flex: 1;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  gap: 10px;
+  margin-block: 10px;
+  position: relative;
+}
+.Projects-figures-foto {
+  max-width: 120px;
+  box-shadow: 0px 0px 10px rgba(24, 24, 16, 0.753);
+  transition: transform 0.3s ease, z-index 0.3s ease;
+  z-index: 1;
+}
+.Projects-figures-foto:hover {
+  transform: scale(2);
+  z-index: 10;
+  -webkit-backdrop-filter: blur(100px);
+          backdrop-filter: blur(100px);
+}
+@media (max-width: 1040px) {
+  .Projects-figures {
+    gap: 30px;
+  }
+}
+
+.Contact {
+  margin-block: 10px;
+}
+.Contact-article {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.Contact-form {
+  display: flex;
+  flex-direction: column;
+  max-width: 600px;
+  gap: 10px;
+}
+.Contact-form-label {
+  flex: 1;
+}
+.Contact-form-input {
+  flex: 1;
+}
+.Contact-figure-image {
+  width: 200px;
+  height: 200px;
+  border: 10px solid red;
+}
+.Contact-figure-image:hover {
+  transform: rotate(23deg);
+}
+
+.dissabled {
+  color: gray;
+}/*# sourceMappingURL=styles.css.map */

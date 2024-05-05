@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles.css">
+    <title>Portfolio</title>
+</head>
+<body>
+    <header class="Navigation">
+        <nav class="Navigation-list">
+            <a class="Navigation-item  Navigation-item--isActive" href="#resumen">Resumen</a>
+            <a class="Navigation-item" href="#aboutme">Sobre mí</a>
+            <a class="Navigation-item" href="#experiencia">Experiencia</a>
+            <a class="Navigation-item" href="#proyectos">Proyectos</a>
+            <a class="Navigation-item" href="contacto/contacto.html" target="_blank">Contactar</a>
+        </nav>
+    </header>
+    <main class="principal-layout">
+        <section class="PrincipalContainer Resume" id="resumen">
+            <figure class="Resume-figure">
+                <img class="Resume-figure-foto" src="images/foto1.jpeg" alt="icon">
+            </figure>
+            <article class="Resume-article">
+                <h1 class="PresentationText">Hola, Soy Ronald</h1>
+                <br>
+                <p class="DescriptionText">Desarrollador Front-end. De Lima, Perú. Especializado en crear aplicaciones móviles</p>
+            </article>           
+        </section>
+        <section class="PrincipalContainer Experience" id="experiencia">
+            <h1 class="PrincipalContainer-title">Experiencia</h1>
+            <div class="Experience-container">
+                <article class="Experience-article">
+                    <h2 class="Experience-article-date">Marzo 2022</h2>
+                    <h3 class="Experience-article-job">Software Engineer lll ~ Encora Inc. PE</h3>
+                    <p>Responsable de la creación, mejora y soporte de aplicaciones móviles. 
+                        <br><br>Mejora importante en la experiencia de usuario. 
+                        <br><br>Formar parte de equipos de desarrollo para proyectos coworking y b2. 
+                        <br><br>Desplegar exitosamente aplicaciones a playstore y appstore. 
+                        <br><br>Fomentar el uso de buenas prácticas en el desarrollo del software</p>
+                </article>
+                <article class="Experience-article">
+                    <h2 class="Experience-article-date">Julio 2021</h2>
+                    <h3 class="Experience-article-job">Full-stack Developer ~ Directv PE</h3>
+                    <p>Aumentar el número de usuarios que utilizan el aplicativo en un 2% mensual. 
+                        <br><br>Mejorar la experiencia al momento de contratar paquetes y promociones. 
+                        <br><br>Implementar pasarela de pago con lyra y mercadopago. 
+                        <br><br>Formar parte del equipo de mejora continua aportando ideas de solución. 
+                        <br><br>Implementar un chatbot virtual integrado al aplicativo móvil. 
+                        <br><br>Aumentar el número de transacciones por medio de la app en un 3% mensual.</p>
+                </article>
+                <article class="Experience-article">
+                    <h2 class="Experience-article-date">Octubre 2020</h2>
+                    <h3 class="Experience-article-job">Web Ui Developer ~ Globant PE</h3>
+                    <p>Mejorar las funcionalidades de los aplicativos. 
+                        <br><br>Integrar storybook para previsualizar componentes. 
+                        <br><br>Participar en proyectos del sector entretenimiento. 
+                        <br><br>Integrar servicios de firebase.</p>
+                </article>
+                <article class="Experience-article">
+                    <h2 class="Experience-article-date">Octubre 2019</h2>
+                    <h3 class="Experience-article-job">Solution Asistant ~ NTT DATA PE</h3>
+                    <p>Desarrollar y publicar aplicaciones con react-native, Android, Xamarin. 
+                        <br><br>Participar en proyectos de banca para múltiples funcionalidades. 
+                        <br><br>Liderar equipo de desarrollo para el sector servicios (luz). 
+                        <br><br>Participar en el proceso de publicación de aplicaciones a playstore y appstore</p>
+                </article>
+                <article class="Experience-article">
+                    <h2 class="Experience-article-date">Enero 2019</h2>
+                    <h3 class="Experience-article-job">Practicante profesional de Desarrollo ~ Semati PE</h3>
+                    <p>Ser apoyo en el desarrollo de aplicaciones para el sector educativo. 
+                        <br><br>Desarrollar y brindar soporte a aplicativos móviles y web. 
+                        <br><br>Integrar un servicio de reportes con jaspersoft. 
+                        <br><br>Desarrollar servicios rest utilizando nodejs para sistemas de facturación y reportes. 
+                        <br><br>Integrar servicios de firebase como crashlytics, analytics, remote config.</p>
+                </article>
+                <article class="Experience-article">
+                    <h2 class="Experience-article-date">Mayo 2018</h2>
+                    <h3 class="Experience-article-job">Practicante pre-profesional de Desarrollo ~ Semati PE</h3>
+                    <p>Diseñar, desarrollar y brindar soporte a aplicaciones con react native node js y reactjs. 
+                        <br><br>Desarrollar más de 50 endpoints de Api rest y generar automáticamente documentación con swagger. 
+                        <br><br>Integrar servicios de notificación push con onesignal. 
+                        <br><br>Integrar servicios de envío de correos con mailgun.</p>
+                </article>
+            </div>
+        </section>
+        <section class="PrincipalContainer Projects" id="proyectos">
+            <h1 class="PrincipalContainer-title">Proyectos</h1>
+            <article class="Projects-article">
+                <div class="Projects-article-description">
+                    <h3 class="Projects-article-title">Comunal</h3>
+                    <p>Aplicación de coworking para alquiler de espacios de trabajo, parking, etc. 
+                        <br><br>Utilizando react-native, Hooks, analytics, aws cognito, styled components, vscode, axios, redux, typescript</p>
+                </div>
+                <figure class="Projects-figures">
+                    <img class="Projects-figures-foto" src="images/comunal/comunal1.webp" alt="icon">
+                    <img class="Projects-figures-foto" src="images/comunal/comunal2.webp" alt="icon">
+                    <img class="Projects-figures-foto" src="images/comunal/comunal3.webp" alt="icon">
+                    <img class="Projects-figures-foto" src="images/comunal/comunal4.webp" alt="icon">
+                </figure>
+            </article>
+        </section>
+    </main>
+</body>
+</html>
