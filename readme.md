@@ -212,7 +212,10 @@ contact-layout {
 ```CSS
 .Navigation {
     padding: $space-base;
-    margin-block: 20px;
+    position: sticky;
+    z-index: 200;
+    top: 0;
+    backdrop-filter: blur(10px);
     &-list{
         display: flex;
         justify-content: space-evenly;
